@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="html css開發網站">
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://www.hexschool.com" />
+	<meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/hexschool-api.appspot.com/o/web%2Forder%2Fhtml_new.png?alt=media&token=5374874e-0efe-491f-be41-8c5b8ef75730"
+	/>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<title>html css開發網站</title>
+	<link rel="stylesheet" href="css/all.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<style type="text/css">
+		.header {
+			background: url(img/header-banner3.png);
+		}
+		.header h1 {
+			text-align: center;
+			font-weight: 700;
+		}
+		.header h1 span{
+			color: #00cc99;
+			font-size: 24px;
+		}
+		.header input {
+			width: 600px;
+			height: 30px;
+			margin-left: 190px;
+			border-radius: 10px;
+		}
+		.search {
+			position: relative;
+			overflow: hidden;
+		}
+		.search img {
+			position: absolute;
+			right: 175px;
+			height: 25px;
+			width: 23px;
+			top: 4px;
+			cursor: pointer;
+		}
+		.content {
+			padding: 0 100px;
+			margin-top: 50px;
+		}
+		/* all h2 */
+		h2 {
+			font-size: 36px;
+			color: #00cc99;
+			margin-bottom: 20px;
+			letter-spacing: 2px;
+			font-weight: 600;
+		}
+		h2 span {
+			color: #9b9b9b;
+			font-size: 24px;
+		}
+		/* all p */
+		p {
+			font-size: 20px;
+			line-height: 30px;
+			margin-bottom: 15px;
+			letter-spacing: 1px;
+			font-weight: 600;
+		}
+		p span {
+			color: #9b9b9b;
+			font-size: 18px;
+			line-height: 24px;
+		}
+
+		.question {
+			margin-bottom: 50px;
+		}
+		.pay ul {
+			margin-top: 0;
+			margin-bottom: 20px;
+		}
+		.pay ul li{
+			list-style-type: decimal;
+			padding-left: 30px;
+			margin-left: 50px;
+			color: #9b9b9b;
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+		.reimburse {
+			margin-top: 50px;
+			margin-bottom: 50px;
+		}
+		.reimburse .green {
+			color: #00cc99;
+			font-size: 18px;
+		}
+		.reimburse ul {
+			margin-top: 0;
+			margin-bottom: 20px;
+		}
+		.reimburse ul li{
+			list-style-type: disc;
+			padding-left: 30px;
+			margin-left: 50px;
+			color: #9b9b9b;
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+		.reimburse .black {
+			margin-bottom: 50px;
+			font-weight: 600;
+			line-height: 50px;
+			font-size: 18px;
+		}
+		.reimburse .indent {
+			text-indent: 30px;
+			margin: 0;padding: 0;
+			margin-left: 50px;
+			font-size: 18px;
+			line-height: 25px;
+		}
+		.input {
+			height: 450px;
+			background-color: #ebebeb;
+			
+		}
+		.input h2 {
+			padding-top: 100px;
+			margin-left: 25px;
+			margin-bottom: -100px;
+			color: #00cc99;;
+			line-height: 60px;
+		}
+		.form {
+			display: inline-block;
+			width: 350px;
+			line-height: 50px;
+			margin-top: -50px;
+		}
+		.form input {
+			width: 350px;
+			height: 30px;
+			border-radius: 5px;
+			font-size: 20px;
+			padding-left: 10px;
+			margin-left: 530px;
+			color: grey;
+			border: none;
+		}
+		.form textarea {
+			width: 350px;
+			height: 150px;
+			border-radius: 5px;
+			font-size: 20px;
+			padding-left: 10px;
+			margin-left: 530px;
+			color: grey;
+			border: none;
+			margin-top: 5px;
+		}
+		.form .button {
+			color: white;
+			background-color: #00cc99;
+			padding: 10px 20px;
+			border-radius: 5px;
+			width: 100px;
+			height: 50px;
+			text-align: center;
+			letter-spacing: 2px;
+			cursor: pointer;
+			margin-left: 800px;
+			transition: all 0.3s;
+		}
+		.form .button:hover {
+			background-color: grey;
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="header">
+			<div class="header-top">
+				<a class="headlogo" href="http://www.hexschool.com" alt="hexschool">
+					hexschool
+				</a>
+				<ul>
+					<li><a href="index.html">首頁</a></li>
+					<li><a href="cource.html">課程</a></li>
+					<li><a href="fqa.html">問答</a></li>
+				</ul>
+			</div>
+			<h1>遇到問題了嗎？<br><span>別擔心，你想找的答案都在這裡！</span></h1>
+			<div class="clearfix"></div>
+			<div class="search">
+				<form>
+					<input type="text" name="text">
+					<img src="img/search.png">
+				</form>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="question">
+				<h2>常見問題# <span>你想問的說不定也在這裡</span></h2>
+				<p>Q：為什麼你們要用Udemy放你們的影音課程，他有什麼好處嗎？<br>
+					<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ab error saepe cum sapiente eveniet doloribus laudantium suscipit architecto ut!</span>
+				</p>
+				<p>Q：影片課程有時效性嗎？<br>
+					<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ab error saepe cum sapiente eveniet doloribus laudantium suscipit architecto ut!</span>
+				</p>
+				<p>Q：我很擔心學完後還是學不會網頁設計，有什麼辦法嗎？<br>
+					<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ab error saepe cum sapiente eveniet doloribus laudantium suscipit architecto ut!</span>
+				</p>
+			</div>
+			<div class="pay">
+				<h2>怎麼付款# <span>付款方式保證最多元</span></h2>
+				<p>Q：請問可以分期付款嗎？<br>
+					<span>A：當然沒問題，在本平台購買我們最高提供6期分期<br>
+						<ul>
+							<li>選擇產品後</li>
+							<li>在進入金流平台付款時可選擇信用卡分期付款</li>
+							<li>選擇期數，旁邊附註每期應付款項</li>
+						</ul>
+					</span>
+				</p>
+				<p>Q：我沒有信用卡，有沒有其他匯款方案？<br>
+					<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ab error saepe cum sapiente eveniet doloribus laudantium suscipit architecto ut!</span>
+				</p>
+				<p>Q：採用其他匯款流程，但還沒有收到課程怎麼辦？<br>
+					<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ab error saepe cum sapiente eveniet doloribus laudantium suscipit architecto ut!</span>
+				</p>
+			</div>
+
+			<div class="reimburse">
+				<h2>我想退款# <span>期待你再次成為我們的學生</span></h2>
+				<p>Q：如果怕線上影音課程吸收不好，可以要求退費嗎？<br>
+					<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ab error saepe cum sapiente eveniet doloribus laudantium suscipit architecto ut!</span>
+				</p>
+				<p>Q：Udemy 如何退款？<br>
+					<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ab error saepe cum sapiente eveniet doloribus laudantium suscipit architecto ut!</span>
+				</p>
+				<p>Q：其他支付流程如何退款？<br>
+					<span>A：請發信到<span class="green">service@hexschool.com</span> 並詳著以下內容：<br>
+						<ul>
+							<li>退款帳號</li>
+							<li>Udemy用戶名稱</li>
+							<li>購買時間</li>
+							<li>退款原因</li>
+						</ul>
+					</span>
+					<span>
+						<span class="black">接下來，我們會有專人協助退款，退款後請注意：</span><br>
+							<ul>
+								<li class="indent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quasi, similique nesciunt at ut sed?</li>
+								<li class="indent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quasi, similique nesciunt at ut sed?</li>
+								<li class="indent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quasi, similique nesciunt at ut sed?</li>
+							</ul>
+				</span>
+				</p>
+			</div>
+		</div>
+		<div class="input">
+			<h2>找不到你的問題嗎？<br>直接寄信給我們解決吧！</h2>
+			<form class="form">
+				<input type="text" name="name" placeholder="你的名子是？">
+				<input type="email" name="email" placeholder="example@gmail.com">
+				<textarea name="textarea" placeholder="你遇到什麼困難呢？"></textarea>
+				<input type="button" class="button" value="送出">
+			</form>
+		</div>
+		
+
+		<div class="footer">
+			<div class="footer-logo">
+				<a href="http://www.hexschool.com" alt="hexschool">hexschool</a>
+			</div>
+			<div class="footer-other">
+				<a href="#"></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

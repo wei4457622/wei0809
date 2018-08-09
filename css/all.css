@@ -1,0 +1,282 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: '微軟正黑體', Arial;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clearfix {
+	clear: both;
+}
+/* index.html */
+.wrap {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.header {
+	height: 560px;
+	background: url(../img/header-banner1.png);
+	width: 960px;
+}
+
+.header-top {
+	height: 60px;
+	line-height: 60px;
+	filter: alpha(opacity=80);
+	-moz-opacity:0.8;
+	opacity:0.8;
+	background-color: #353535;
+}
+
+.header-top ul {
+	float: right;
+
+}
+
+.header-top ul li {
+	float: left;
+	padding: 0px 20px;
+}
+
+.header-top ul li a {
+	text-decoration: none;
+	color: white;
+	display: block;
+	text-align: center;
+	width: 52px;
+	height: 52px;
+}
+
+.header-top ul li a:hover {
+	color: #00cc99;
+	border-bottom: 5px solid #00cc99;
+}
+
+.headlogo {
+	background-image: url(../img/header-logo.png);
+	display: block;
+	width: 182px;
+	height: 36px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+	overflow: hidden;
+	text-indent: 101%;
+	white-space: nowrap;
+}
+
+.header h1 {
+	color: white;
+	font-size: 40px;
+	margin-top: 80px;
+	margin-left: 30px;
+	line-height: 80px;
+}
+
+.header-btn {
+	padding: 15px 40px;
+	color: white;
+	background-color: #00cc99;
+	display: inline-block;
+	border-radius: 5px;
+	margin-left: 50px;
+	margin-top: 50px;
+	font-weight: 500;
+	font-size: 18px;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+.header-btn:hover {
+	background-color: grey;
+	color: red;
+}
+
+/* content */
+.content {
+	padding: 30px;
+}
+
+/* index.html */
+.list {
+	margin-top: 30px;
+}
+
+.list li {
+	float: left;
+	width: 290px;
+	margin-right: 10px;
+	border: solid 1px #d6d6d6;
+	box-shadow: 1px 3px 3px #d6d6d6;
+	box-sizing: border-box;
+}
+
+.list li p {
+	text-align: center;
+	padding: 5px;
+	padding-bottom: 15px;
+	color: #333333;
+}
+
+.list li img {
+	padding-left: 30px;
+}
+
+.table {
+	width: 880px;
+	margin: 0 auto;
+}
+
+.table tr {
+	width: 220px;
+}
+
+.table th, .table td {
+	border-bottom: 1px solid #dddddd;
+	border-top: 1px solid #dddddd;
+	font-size: 18px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	padding-left: 15px;
+	font-weight: 600;
+}
+
+.header-content-title {
+	font-size: 32px;
+	font-weight: 600;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	text-align: left;
+	color: #00cc99;
+	margin-left: 20px;
+}
+
+.header-content-title span {
+	font-size: 22px;
+	color: #9b9b9b;
+	margin-left: 5px;
+}
+
+.table .grey {
+	background-color: #f7f7f7;
+}
+
+.greenFz {
+	color: #26ad88;
+}
+
+.header-box {
+	background-color: #ebebeb;
+	height: 300px;
+	margin-top: 30px;
+}
+
+.header-input {
+	font-size: 32px;
+	color: #57574e;
+	padding-left: 50px;
+	padding-top: 80px;
+	line-height: 60px;
+	float: left;
+}
+
+.input-right {
+	float: right;
+	margin-right: 50px;
+	margin-top: 80px;
+}
+
+.input-right .header-input-content {
+	width: 350px;
+	height: 30px;
+	border-radius: 5px;
+	margin-bottom: 15px;
+}
+
+.input-right .header-input-btn {
+	padding: 10px 20px;
+	color: white;
+	background-color: #00cc99;
+	border-radius: 5px;
+	margin-left: 280px;
+	cursor: pointer;
+}
+
+/* footer */
+.footer {
+	height: 130px;
+	background: #323228;
+	z-index: 1;
+	position: relative;
+}
+
+.footer-logo a {
+	background-image: url(../img/footer-logo.png);
+	background-repeat: no-repeat;
+	width: 182px;
+	height: 70px;
+	position: absolute;
+	top: 30px;
+	left: 40px;
+	white-space: nowrap;
+	text-indent: 101%;
+	overflow: hidden;
+}
+
+.footer-other a {
+	position: absolute;
+	width: 159px;
+	height: 58px;
+	display: block;
+	background-image: url(../img/footer-other.png);
+	background-repeat: no-repeat;
+	white-space: nowrap;
+	text-indent: 101%;
+	overflow: hidden;
+	right: 20px;
+	top: 30px;
+}
